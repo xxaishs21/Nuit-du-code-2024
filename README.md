@@ -1,49 +1,162 @@
-<div align="center">🎮 Finding a Treasure in the Void Simulator
-Nuit du Code 2024 · Équipe R.S.A. · Python / Pyxel
 
-Un jeu d'exploration et de minage en pixel art, réalisé en équipe à l'île Maurice.
-<img src="images/nuit-du-code.jpg" alt="Nuit du Code" width="280"></div>🌍 L'histoire
-Thomas arrive sur la planète Sylva, attiré par la rumeur d'un trésor caché. Avec sa morpho-pioche, il creuse à travers les différentes couches de la planète, récupère des pièces et améliore son équipement pour atteindre le mystérieux coffre enfoui dans les profondeurs.
-🖼️ Aperçu du jeu
 <div align="center">
-  <img src="images/gameplay.png" alt="Capture d'écran originale du jeu R.S.A." width="480">
-  <p><em>Capture originale issue de notre documentation de la Nuit du Code.</em></p>
-</div>🕹️ Comment jouer ?
-- Flèches directionnelles : se déplacer dans la carte.
-- Clic sur les blocs : les casser pour récolter des pièces d'or.
-- P : mettre le jeu en pause ou reprendre la partie.
-- R : recommencer après avoir ouvert le coffre.
-Le but est d'atteindre la couche la plus profonde, d'améliorer progressivement sa pioche et d'ouvrir le coffre.
-⛏️ Minage et améliorations
-L'outil actuel est affiché en bas à gauche. Lorsque suffisamment de pièces sont disponibles, le bouton d'amélioration passe du blanc au vert.
 
-Certains matériaux exigent une pioche plus puissante :
-Pioche en fer	Obsidienne
-<img src="images/pioche-fer.png" alt="Pioche en fer originale" width="55">	<img src="images/obsidienne.png" alt="Bloc d'obsidienne original" width="55">
+# 🎮 Finding a Treasure in the Void Simulator
 
+### Nuit du Code 2024
 
-Par exemple, il faut une pioche en fer pour miner l'obsidienne. Au dernier niveau d'amélioration, tous les blocs deviennent minables sauf les blocs d'Eternium, indestructibles.
+**Un jeu d'exploration et de minage en pixel art, développé avec Python et Pyxel.**
 
-<img src="images/eternium.png" alt="Bloc d'Eternium original" width="50"> <img src="images/blocs.png" alt="Illustrations originales des différents blocs" width="220">
-🛠️ Technologies
-- Python : logique du jeu.
-- Pyxel : moteur de jeu rétro, graphismes et interactions.
-🧩 Défis rencontrés
-- Réaliser le déplacement du personnage en faisant défiler le décor, un défi qui nous a pris environ deux heures.
-- Concevoir une interface lisible malgré une palette de couleurs limitée.
-🚀 Améliorations envisagées
+**Équipe R.S.A. • Île Maurice 🇲🇺**
+
+<img src="images/nuit-du-code.jpg" alt="Nuit du Code" width="420">
+
+</div>
+
+---
+
+## 🌍 À propos du jeu
+
+Thomas, un jeune explorateur, arrive sur la mystérieuse planète **Sylva**, où se cacherait un trésor.
+
+Équipé de sa **morpho-pioche**, il doit explorer les profondeurs de la planète, miner différents matériaux, récolter des pièces d'or et améliorer son équipement pour atteindre le coffre au trésor.
+
+Le défi : progresser à travers les différentes couches de la planète en débloquant des outils toujours plus puissants.
+
+---
+
+## 🖼️ Aperçu du jeu
+
+<div align="center">
+
+<img src="images/gameplay.png" alt="Capture du jeu" width="480">
+
+*Capture originale de notre jeu réalisé lors de la Nuit du Code 2024.*
+
+</div>
+
+---
+
+## 🕹️ Comment jouer ?
+
+| Commande | Action |
+| :---: | --- |
+| ⬅️ ⬆️ ⬇️ ➡️ | Déplacer le personnage |
+| 🖱️ Clic gauche | Miner les blocs et récupérer des pièces |
+| `P` | Mettre le jeu en pause / reprendre |
+| `R` | Recommencer après avoir ouvert le coffre |
+
+**Objectif :** atteindre la couche la plus profonde de Sylva, améliorer sa pioche et ouvrir le coffre au trésor.
+
+---
+
+## ⛏️ Minage et améliorations
+
+Le jeu repose sur un système de progression : chaque bloc miné permet de récolter des pièces d'or pour améliorer son outil.
+
+### 🔹 Amélioration de la pioche
+
+- La pioche actuelle est affichée en bas à gauche de l'écran.
+- Le bouton d'amélioration devient **vert** lorsqu'une amélioration est disponible.
+- Certains matériaux nécessitent une pioche plus puissante.
+
+### 🔹 Exemple : l'obsidienne
+
+<div align="center">
+
+| Pioche en fer | Obsidienne |
+| :---: | :---: |
+| <img src="images/pioche-fer.png" width="65"> | <img src="images/obsidienne.png" width="65"> |
+
+</div>
+
+Une **pioche en fer** est nécessaire pour miner l'obsidienne.
+
+### 🔹 Les différents matériaux
+
+<div align="center">
+
+<img src="images/blocs.png" alt="Différents blocs du jeu" width="300">
+
+</div>
+
+Au dernier niveau d'amélioration, tous les matériaux peuvent être minés, à l'exception de l'**Eternium**, qui reste indestructible.
+
+<div align="center">
+
+<img src="images/eternium.png" alt="Bloc Eternium" width="65">
+
+*Bloc d'Eternium — indestructible.*
+
+</div>
+
+---
+
+## 🛠️ Technologies utilisées
+
+| Technologie | Utilisation |
+| --- | --- |
+| **Python** | Programmation de la logique du jeu |
+| **Pyxel** | Moteur de jeu, graphismes rétro et interactions |
+| **Pixel Art** | Création des personnages, outils et environnements |
+
+---
+
+## 💡 Défis techniques
+
+Pendant le développement, nous avons rencontré plusieurs difficultés :
+
+**1. Défilement du décor**
+
+Mettre en place le déplacement du personnage en faisant bouger l'environnement a été l'un de nos principaux défis techniques. Cette fonctionnalité nous a demandé environ deux heures de travail.
+
+**2. Contraintes graphiques**
+
+La palette de couleurs limitée de Pyxel nous a obligés à adapter notre interface pour rendre les différents matériaux et éléments du jeu reconnaissables.
+
+---
+
+## 🚀 Améliorations envisagées
+
 - [ ] Créer un écran d'accueil.
 - [ ] Ajouter des effets sonores.
-- [ ] Ajouter une durabilité aux blocs et des étapes visuelles de leur destruction (les illustrations étaient déjà dessinées, mais n'ont pas pu être intégrées à temps).
-👥 Équipe R.S.A.
-- Raees Badat
-- Sania Mattan
-- Assim Aly
-Projet réalisé lors de la Nuit du Code 2024, dans le cadre de notre scolarité au Lycée La Bourdonnais, à l'île Maurice.
-📄 Documentation
-La [documentation originale du projet](Documentation_RSA.pdf) présente le scénario, les commandes, les difficultés rencontrées et les améliorations imaginées par l'équipe.
-🤝 Événement et partenaires
+- [ ] Implémenter un système de durabilité des blocs.
+- [ ] Ajouter des animations montrant la progression de la destruction des blocs.
+
+Les illustrations de destruction progressive avaient déjà été dessinées, mais nous n'avons pas eu suffisamment de temps pour les intégrer.
+
+---
+
+## 👥 Notre équipe — R.S.A.
+
+Ce projet a été réalisé en équipe lors de la **Nuit du Code 2024**, au Lycée La Bourdonnais, à l'Île Maurice.
+
+| Membres de l'équipe |
+| --- |
+| **Raees Badat** |
+| **Sania Mattan** |
+| **Assim Aly** |
+
+---
+
+## 📄 Documentation
+
+La documentation originale du projet présente le scénario, les commandes, les mécaniques de jeu et les difficultés rencontrées.
+
+📎 **[Consulter notre documentation (PDF)](Documentation_RSA.pdf)**
+
+---
+
+## 🏫 Événement et partenaires
+
 <div align="center">
-  <img src="images/french-tech-mauritius.jpg" alt="La French Tech Mauritius" height="115">&nbsp;&nbsp;
-  <img src="images/lycee-la-bourdonnais.jpg" alt="Lycée La Bourdonnais" height="115">
-</div><sub>Projet d'équipe réalisé dans le cadre de la Nuit du Code 2024. Les visuels du jeu sont repris des documents d'origine.</sub>
+
+<img src="images/french-tech-mauritius.jpg" alt="French Tech Mauritius" height="105">
+&nbsp;&nbsp;&nbsp;
+<img src="images/lycee-la-bourdonnais.jpg" alt="Lycée La Bourdonnais" height="105">
+
+<br><br>
+
+*Projet réalisé dans le cadre de la Nuit du Code 2024.*
+
+</div>
